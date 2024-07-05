@@ -1,6 +1,6 @@
 # Start Monitor your project!
 
-Hi! in this section we want to talk about **metrics**. first of all metric is a nessecary part in every project. it helps you monitor your project and figure out weaknesses and problems in your code. for example you can check a service performance using this feature and lots of other cool stuffs
+Hi! in this section we want to talk about **metrics**. first of all, metric is a nessecary part in every project. it helps you monitor your project and figure out weaknesses in your code. for example you can check a service performance using this feature and lots of other cool stuffs.
 now we start by defining what is prometheus and what is grafana generally.
 
 
@@ -10,10 +10,10 @@ prometheus is a tool that you can add to your project and send updates in specif
 
 ## Alerting
 another essential thing in every software team is alerting.
-at first i must say, our project alerting is not complete reaally much. but it works on slack.
+at first i must say, our project alerting is not complete really much. but it works on slack somehow.
 additionally, you must define some rules for prometheus and if one of that rules didn't meet your needs, prometheus alert manager send a notification for you.
 for example if in 15minutes your database did not answered well or in 30minutes you didn't have a successful payment it can alert you about it.
-finally, you can set alert manager using a Telegram bot, Slack, or even Bale bot(an iraninan messanger)
+finally, you can set alert manager using a Telegram bot, Slack, or even Bale bot(an Iranian messanger)
 
 ## Grafana
 
@@ -27,7 +27,7 @@ you can find about it more in link below:
 
 ## Commands
 
-you can start docker by command below. keep in mind you must be in the directory which docker-compose.yml exists
+you can start docker by commands below. keep in mind you must be in the directory which docker-compose.yml exists
 
     docker compose up -d
 then you can stop it using:
