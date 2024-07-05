@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/api/user")
+@RequestMapping("/api/admin/getanalyticreport")
 @RestController
 public class AnalyticReportImplement extends AbstractAnalyticReportController<ExtendedAnalyticReportDTO> {
 
