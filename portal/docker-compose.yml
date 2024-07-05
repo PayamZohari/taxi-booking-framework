@@ -40,3 +40,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=taxi-parham
     networks:
       - taxi
+
+networks:
+  taxi:
+    driver: bridge
