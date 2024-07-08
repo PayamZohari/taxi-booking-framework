@@ -10,6 +10,6 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 public class ExtendedAnalyticReportDTO extends BaseAnalyticReportDTO {
-    private int totalAdvertisementIncome;
-    private float advertiseCTR;
+    private String totalAdvertisementIncome;
+    private String advertiseCTR;
 }
