@@ -4,6 +4,6 @@ import com.taxi.framework.user.dto.BaseAnalyticReportDTO;
 import com.taxi.framework.user.dto.BaseUserSignupDTO;
 
 public interface AnalyticReportService<T extends BaseAnalyticReportDTO>{
-    T getAnalyticReport(T dto);
+    T getAnalyticReport(int day);
 
 }
