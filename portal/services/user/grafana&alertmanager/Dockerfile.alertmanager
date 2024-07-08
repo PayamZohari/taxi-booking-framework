@@ -1,0 +1,12 @@
+# Dockerfile.alertmanager
+FROM prom/alertmanager
+
+# Set environment variables
+ENV ALERTMANAGER_CONFIG_FILE=/etc/alertmanager/config.yml
+
+# Copy configuration file
+COPY config.yml /etc/alertmanager/
+
+# Expose port 9093
+EXPOSE 9093
+

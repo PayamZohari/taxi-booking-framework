@@ -1,0 +1,9 @@
+# config.yml
+route:
+  group_by: ['alertname', 'cluster', 'service']
+
+receivers:
+- name: 'team-X-mails'
+  email_configs:
+  - to: 'payamzohari80@gmail.com'
+

@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  grafana:
+    build:
+      context: .
+      dockerfile: Dockerfile.grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+  alertmanager:
+    build:
+      context: .
+      dockerfile: Dockerfile.alertmanager
+    ports:
+      - "9095:9093"
+
+volumes:
+  grafana-storage:
+

@@ -1,0 +1,10 @@
+# Dockerfile.grafana
+FROM grafana/grafana
+
+# Set environment variables
+ENV GF_SECURITY_ADMIN_USER=admin
+ENV GF_SECURITY_ADMIN_PASSWORD=yourpassword
+
+# Expose port 3000
+EXPOSE 3000
+
