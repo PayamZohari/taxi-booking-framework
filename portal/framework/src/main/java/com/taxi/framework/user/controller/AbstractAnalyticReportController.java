@@ -3,8 +3,8 @@ package com.taxi.framework.user.controller;
 import com.taxi.framework.user.dto.BaseAnalyticReportDTO;
 import com.taxi.framework.user.service.AnalyticReportService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 public abstract class AbstractAnalyticReportController<T extends BaseAnalyticReportDTO> {
 
@@ -16,9 +16,9 @@ public abstract class AbstractAnalyticReportController<T extends BaseAnalyticRep
     }
 
 
-    @PostMapping("/getAnalyticReport")
-    public ResponseEntity<T> getAnalyticReport(@RequestBody T dto) {
-        return ResponseEntity.ok(analyticReportService.getAnalyticReport(dto));
+    @GetMapping("/getAnalyticReport/{day}")
+    public ResponseEntity<T> getAnalyticReport(@PathVariable int day) {
+        return ResponseEntity.ok(analyticReportService.getAnalyticReport(day));
     }
 
 }

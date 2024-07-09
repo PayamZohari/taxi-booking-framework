@@ -10,11 +10,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class BaseAnalyticReportDTO {
 
-    private int totalPassengersPerDay;
-    private int totalTripsPerDay;
-    private int totalCanceledTripsPerDay;
-    private int totalActiveDriversPerDay;
-    private int totalProfitPerDay;
+    private String totalPassengersPerDay;
+    private String totalTripsPerDay;
+    private String totalCanceledTripsPerDay;
+    private String totalActiveDriversPerDay;
+    private String totalProfitPerDay;
 
 
 }
