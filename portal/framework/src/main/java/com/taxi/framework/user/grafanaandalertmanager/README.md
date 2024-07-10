@@ -13,7 +13,19 @@ Here in this repository, we have designed a report generation and hive automatio
 
 ## Start and run the grafana and alertmanager container
 ```bash
-dockercompose up
+#!/bin/bash
+
+cd ./portal
+# Build the Spring Boot application
+mvn clean package
+
+# Navigate to the directory containing the Docker Compose file
+cd ./framework/src/java/com/taxi/framework/user/grafanaandalertmanager
+
+USER root
+
+# Start Docker Compose services
+sudo docker compose up
 ```
 When all the services all started successfully, now go to http://localhost:3001/ to check that Grafana has started successfully, and http://localhost:9095/ that alertmanager is up and running. 
 
