@@ -9,11 +9,7 @@ Here in this repository, we have designed a report generation and hive automatio
 *  Build the grafana and alertmanager images
 *  set project up with running ./setup_project.sh
 
-## Your environment variable would look like this.
-```bash
-AIRFLOW_UID=33333
-AIRFLOW_GID=0
-```
+
 
 ## Start and run the Spark and Airflow containers.
 ```bash
