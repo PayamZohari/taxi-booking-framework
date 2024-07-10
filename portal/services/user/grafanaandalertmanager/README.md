@@ -11,7 +11,7 @@ Here in this repository, we have designed a report generation and hive automatio
 
 
 
-## Start and run the Spark and Airflow containers.
+## Start and run the grafana and alertmanager container
 ```bash
 dockercompose up
 ```
